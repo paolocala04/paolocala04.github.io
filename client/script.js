@@ -34,12 +34,12 @@ const images = {
   telefono: new Image()
 };
 
-images.room.src = '/room_bg_new.png';
-images.fazzoletti.src = '/fazzoletti.png';
-images.gocce.src = '/gocce_naso.png';
-images.coperta.src = '/coperta.png';
-images.panino.src = '/panino.png';
-images.telefono.src = '/telefono.png';
+images.room.src = '/client/room_bg_new.png';
+images.fazzoletti.src = '/client/fazzoletti.png';
+images.gocce.src = '/client/gocce_naso.png';
+images.coperta.src = '/client/coperta.png';
+images.panino.src = '/client/panino.png';
+images.telefono.src = '/client/telefono.png';
 
 // Sounds - initialized null, will be created on first user interaction
 let eventSnoreSound = null;
@@ -54,13 +54,13 @@ let audioInitialized = false;
 function initializeAudio() {
   if (audioInitialized) return;
   
-  eventSnoreSound = new Audio('/snoring.mp3');
-  phoneRingSound = new Audio('/phone_ring.mp3');
-  coldSound = new Audio('/cold_sound.mp3');
-  eatingSound = new Audio('/eating.mp3');
-  noseSound = new Audio('/nose_sound.mp3');
-  hungerSound = new Audio('/hunger_sound.mp3');
-  backgroundMusic = new Audio('/background_music.mp3');
+  eventSnoreSound = new Audio('/client/snoring.mp3');
+  phoneRingSound = new Audio('/client/phone_ring.mp3');
+  coldSound = new Audio('/client/cold_sound.mp3');
+  eatingSound = new Audio('/client/eating.mp3');
+  noseSound = new Audio('/client/nose_sound.mp3');
+  hungerSound = new Audio('/client/hunger_sound.mp3');
+  backgroundMusic = new Audio('/client/background_music.mp3');
   
   eventSnoreSound.loop = false;
   eventSnoreSound.volume = 0.6;
