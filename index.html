@@ -1,3 +1,35 @@
-<head>
-  <meta http-equiv='refresh' content='0; URL=http://example.com/'>
-</head>
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title>Notte Tranquilla</title>
+    <link rel="stylesheet" href="/client/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="gameCanvas"></canvas>
+      
+      <div id="ui-layer">
+        <div class="top-bar">
+          <span id="nightDisplay" data-testid="text-nights">🌙 Notte 1</span>
+          <div class="center-display">
+            <span id="scoreDisplay" data-testid="text-score">❤️ 0</span>
+            <span id="timeDisplay" data-testid="text-time">⏳ 60s</span>
+          </div>
+        </div>
+      </div>
+      
+      <div id="end-screen">
+        <h1>Notte superata ❤️</h1>
+        <p>adesso possiamo dormire.</p>
+        <p>Cuori raccolti: <span id="finalScore">0</span></p>
+        <button onclick="restartGame()" data-testid="button-restart">Prossima Notte</button>
+      </div>
+    </div>
+    <script type="module" src="/client/script.js"></script>
+  </body>
+</html>
