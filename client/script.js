@@ -34,12 +34,12 @@ const images = {
   telefono: new Image()
 };
 
-images.room.src = '/client/room_bg_new.png';
-images.fazzoletti.src = '/client/fazzoletti.png';
-images.gocce.src = '/client/gocce_naso.png';
-images.coperta.src = '/client/coperta.png';
-images.panino.src = '/client/panino.png';
-images.telefono.src = '/client/telefono.png';
+images.room.src = 'https://github.com/paolocala04/paolocala04.github.io/tree/main/client/room_bg_new.png';
+images.fazzoletti.src = 'https://github.com/paolocala04/paolocala04.github.io/tree/main/client/fazzoletti.png';
+images.gocce.src = 'https://github.com/paolocala04/paolocala04.github.io/tree/main/client/gocce_naso.png';
+images.coperta.src = 'https://github.com/paolocala04/paolocala04.github.io/tree/main/client/coperta.png';
+images.panino.src = 'https://github.com/paolocala04/paolocala04.github.io/tree/main/client/panino.png';
+images.telefono.src = 'https://github.com/paolocala04/paolocala04.github.io/tree/main/client/telefono.png';
 
 // Sounds - initialized null, will be created on first user interaction
 let eventSnoreSound = null;
