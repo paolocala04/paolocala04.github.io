@@ -54,13 +54,13 @@ let audioInitialized = false;
 function initializeAudio() {
   if (audioInitialized) return;
   
-  eventSnoreSound = new Audio('/client/snoring.mp3');
-  phoneRingSound = new Audio('/client/phone_ring.mp3');
-  coldSound = new Audio('/client/cold_sound.mp3');
-  eatingSound = new Audio('/client/eating.mp3');
-  noseSound = new Audio('/client/nose_sound.mp3');
-  hungerSound = new Audio('/client/hunger_sound.mp3');
-  backgroundMusic = new Audio('/client/background_music.mp3');
+  eventSnoreSound = new Audio('https://github.com/paolocala04/paolocala04.github.io/tree/main/client/snoring.mp3');
+  phoneRingSound = new Audio('https://github.com/paolocala04/paolocala04.github.io/tree/main/client/phone_ring.mp3');
+  coldSound = new Audio('https://github.com/paolocala04/paolocala04.github.io/tree/main/client/cold_sound.mp3');
+  eatingSound = new Audio('https://github.com/paolocala04/paolocala04.github.io/tree/main/client/eating.mp3');
+  noseSound = new Audio('https://github.com/paolocala04/paolocala04.github.io/tree/main/client/nose_sound.mp3');
+  hungerSound = new Audio('https://github.com/paolocala04/paolocala04.github.io/tree/main/client/hunger_sound.mp3');
+  backgroundMusic = new Audio('https://github.com/paolocala04/paolocala04.github.io/tree/main/client/background_music.mp3');
   
   eventSnoreSound.loop = false;
   eventSnoreSound.volume = 0.6;
